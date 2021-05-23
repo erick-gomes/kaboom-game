@@ -9,7 +9,8 @@ export default function Home() {
             action, sprite, width, height,
             scale, origin, pos, body,
             keyPress, go, loop, rand,
-            start, text, color, rect
+            start, text, color, rect,
+            mouseClick
         } = kaboom({
             fullscreen: true,
             scale: 2
@@ -38,6 +39,10 @@ export default function Home() {
             const JUMP_FORCE = 320
 
             keyPress('space', () => {
+                birdy.jump(JUMP_FORCE)
+            })
+
+            mouseClick(() => {
                 birdy.jump(JUMP_FORCE)
             })
 
