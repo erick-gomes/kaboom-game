@@ -113,6 +113,10 @@ export default function Home() {
             keyPress("space", () => {
                 go("main")
             })
+
+            mouseClick(() => {
+                go('main')
+            })
         })
 
         start('main')
