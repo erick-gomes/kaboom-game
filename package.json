@@ -17,5 +17,8 @@
     "@types/node": "22.13.5",
     "@types/react": "latest",
     "typescript": "latest"
-  }
+  },
+    "engines": {
+      "node": "22.x"
+    }
 }
